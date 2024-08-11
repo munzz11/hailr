@@ -9,6 +9,7 @@
     <!-- Launch the rosbridge_websocket node with the specified port -->
     <node pkg="rosbridge_server" type="rosbridge_websocket" name="rosbridge_websocket" output="screen">
         <param name="port" value="$(arg port)" />
+        <param name="websocket_timeout" value="60.0" />
     </node>
 
     <!-- Launch the marine_radio_tools send_text_service node -->
