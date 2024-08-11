@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Call the ROS Service
       serviceClient.callService(request, function (response) {
-          console.log('Service 1 Response:', response);
+          console.log('Stop horn request successful: ', response);
           // Handle the response as needed
       }, function (error) {
-          console.error('Service 1 Error:', error);
+          console.error('Stop horn error:', error);
           // Handle any errors
       });
   });
@@ -77,10 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Call the ROS Service
         serviceClient.callService(request, function (response) {
-            console.log('Service Response:', response);
+            console.log('Horn state request successful: ', response);
             // Handle the response as needed
         }, function (error) {
-            console.error('Service Error:', error);
+            console.error('Horn state request error: ', error);
             // Handle any errors
         });
     }
@@ -106,10 +106,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Call the ROS Service
         serviceClient.callService(request, function (response) {
-            console.log('Service 1 Response:', response);
+            console.log('Set channel request successful: ', response);
             // Handle the response as needed
         }, function (error) {
-            console.error('Service 1 Error:', error);
+            console.error('Set channel request error: ', error);
             // Handle any errors
         });
 
@@ -142,10 +142,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Call the ROS Service
         serviceClient.callService(request, function (response) {
-            console.log('Service 1 Response:', response);
+            console.log('VHF transmit request successful:', response);
             // Handle the response as needed
         }, function (error) {
-            console.error('Service 1 Error:', error);
+            console.error('VHF transmist request error:', error);
             // Handle any errors
         });
 
@@ -171,10 +171,10 @@ volume.addEventListener('input', function () {
 
     // Call the ROS Service
     serviceClient.callService(request, function (response) {
-        console.log('Service Response:', response);
+        console.log('Hailer volume request successful:', response);
         // Handle the response as needed
     }, function (error) {
-        console.error('Service Error:', error);
+        console.error('Hailer volume request error', error);
         // Handle any errors
     });
 });
@@ -204,10 +204,10 @@ pitch.addEventListener('input', function () {
 
     // Call the ROS Service
     serviceClient.callService(request, function (response) {
-        console.log('Service Response:', response);
+        console.log('Horn pitch request successful', response);
         // Handle the response as needed
     }, function (error) {
-        console.error('Service Error:', error);
+        console.error('Horn pitch request error', error);
         // Handle any errors
     });
 });

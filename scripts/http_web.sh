@@ -9,6 +9,6 @@ if [ $? != 0 ]; then
 fi
 
 # Change directory and start Python HTTP server in the tmux session
-tmux send-keys -t $SESSION_NAME:0 'cd /home/field/hailr' Enter
-tmux send-keys -t $SESSION_NAME:0 'python3 -m http.server --bind 10.8.0.42' Enter
+tmux send-keys -t $SESSION_NAME:0 'cd /home/field/src/hailr' Enter
+tmux send-keys -t $SESSION_NAME:0 'python3 -m http.server --bind 10.8.0.41' Enter
 
